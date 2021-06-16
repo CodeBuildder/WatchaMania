@@ -1,0 +1,11 @@
+.row-movie {
+  transition: 0.3s ease-in;
+}
+
+.row-movie:hover {
+  transform: scale(1.08);
+}
+
+.moviePoster::-webkit-scrollbar {
+  display: none;
+}
