@@ -1,10 +1,11 @@
 import "./App.css";
 import Row from "./Components/Row";
+import BigBan from "./Components/Banner";
 import apiRequest from "./api/api";
 function App() {
   return (
     <div className="App">
-      Hey
+      <BigBan />
       <Row
         title="NETFLIX ORIGINALS"
         url={apiRequest.fetchNetflixOriginals}

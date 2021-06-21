@@ -18,7 +18,7 @@ function Row({ title, url, isLargeRow }) {
 
   //console.log(movie);
   return (
-    <div className="row">
+    <div className="row ml-5">
       <h2> {title} </h2>
       <div className="flex w-full p-7 object-contain overflow-y-hidden overflow-x-scroll moviePoster">
         {movie.map((movie) => (
