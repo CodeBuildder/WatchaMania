@@ -9,3 +9,13 @@
 .moviePoster::-webkit-scrollbar {
   display: none;
 }
+
+.bannerFadeBottom {
+  height: 9.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(12, 12, 12, 0.911),
+    #111
+  );
+}

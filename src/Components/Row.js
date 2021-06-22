@@ -11,7 +11,7 @@ function Row({ title, url, isLargeRow }) {
     async function fetchMovie() {
       const request = await axios.get(url);
       setMovie(request.data.results);
-      console.log(request.data.resultsyea);
+      //console.log(request.data.results);
     }
     fetchMovie();
   }, [url]);
@@ -19,7 +19,7 @@ function Row({ title, url, isLargeRow }) {
   //console.log(movie);
   return (
     <div className="row ml-5">
-      <h2> {title} </h2>
+      <h2 className="text-white font-semibold text-2xl"> {title} </h2>
       <div className="flex w-full p-7 object-contain overflow-y-hidden overflow-x-scroll moviePoster">
         {movie.map((movie) => (
           <img
